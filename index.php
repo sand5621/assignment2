@@ -49,7 +49,14 @@ To change this template use Tools | Templates.
                 }
                 //print_r($cardFaces);
                 for($j = 0; $j < count($rows); $j++){
-                    echo "<tr>\n";
+                    echo "<tr";
+                    if($j % 2 == 1){
+                        echo " class='even'";
+                    }
+                    else{
+                        echo " class='odd'";
+                    }
+                    echo ">\n";
                         for($i = 0; $i < count($rows[$j]); $i++){
                             echo "<td><img src='".CARDBACK."' alt='The back of a playing card' onclick='image(this,\"".$cardFaces[$j][$i]."\")'></td>\n";
                         }

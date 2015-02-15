@@ -36,3 +36,17 @@ h2{
 table {
     margin: 0 auto; /* or margin: 0 auto 0 auto */
 }
+img{
+    height: 100%;
+}
+.odd > td{
+    border-style: outset;
+    border-width: 5px;
+    border-color:#CCFFCC; 
+}
+.even > td {
+    border-style: outset;
+    border-width: 5px;
+    border-color:white;
+}
+
