@@ -13,15 +13,15 @@ To change this template use Tools | Templates.
             //console.log(newSource);
             var source = card.src.split("/");
             var relativeSource = source[4]+"/"+source[5]+"/"+source[6];
-            console.log(relativeSource);
+            //console.log(relativeSource);
             
             if(relativeSource == "img/cards/card_back.png"){
                 card.src = newSource;
-                console.log("Changing the source to the front");
+                //console.log("Changing the source to the front");
             }
             else{
                card.src = "img/cards/card_back.png";
-               console.log("chaging the souce to back");
+               //console.log("chaging the souce to back");
                 
             }
         }
